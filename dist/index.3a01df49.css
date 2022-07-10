@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  width: 100%;
+  font-family: Ubuntu, sans-serif;
+  font-size: 2rem;
+}
+
+.grid {
+  height: 10vh;
+  grid-template-columns: 20rem 10rem 10rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-right: 8rem;
+  display: grid;
+}
+
+.flex {
+  justify-self: end;
+  align-items: center;
+  gap: .3rem;
+  font-weight: 500;
+  display: flex;
+}
+
+#buttons {
+  grid-column: 2 / -1;
+  gap: 2rem;
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  color: #f0f8ff;
+  letter-spacing: .1rem;
+  height: 4rem;
+  width: 10rem;
+  background-color: #418dcc;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.start {
+  width: 100%;
+}
+
+.lap, .reset {
+  color: #418dcc;
+  background: #418dcc30;
+}
+
+.lap, .pause, .resume, .reset {
+  font-size: 70%;
+  font-weight: 600;
+}
+
+.laps {
+  margin: 0 auto;
+}
+
+.collection {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.li {
+  gap: 6rem;
+  display: flex;
+}
+
+.num {
+  color: #418dcc;
+}
+
+.gap {
+  color: #33333385;
+}
+
+@media (max-width: 50em) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    grid-template-columns: 30% 20% 20%;
+    gap: 1.6rem;
+    margin: 0 auto;
+  }
+
+  #buttons {
+    gap: .5rem;
+  }
+
+  .btn {
+    height: 3.5rem;
+    font-size: calc(.882353vw + 1.01765rem);
+  }
+
+  .collection {
+    gap: 3rem;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+  }
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */

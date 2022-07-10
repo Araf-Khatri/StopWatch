@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  color: #333;
+  width: 100%;
+}
+
+.grid {
+  display:grid;
+  /* place-items: center; */
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 20rem 10rem 10rem;
+  gap: 2rem;
+  height: 10vh;
+  margin-right: 8rem;
+  margin-top: 2rem;
+}
+
+.flex {
+  display:flex;
+  align-items:center;
+  gap: 0.3rem;
+  font-weight: 500;
+  justify-self:end;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* BUTTON */
+#buttons {
+  display: flex;
+  gap: 2rem;
+  grid-column: 2 / -1;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  background-color: #418dcc; 
+  color: aliceblue;
+  border: none;
+  border-radius: 5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  height: 4rem;
+  width: 10rem;
+}
+
+.start  {
+  width: 100%;
+}
+
+.lap, .reset {
+  background: #418dcc30;
+  color: #418dcc;
+}
+
+.lap, .pause, .resume, .reset {
+  font-size: 70%;
+  font-weight: 600;
+}
+
+/* ///////////////////////////////////////////////////// */
+/* Laps */
+.laps {
+  margin: 0 auto;
+}
+
+.collection {
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.li {
+  display: flex;
+  gap:6rem;
+}
+.num {
+  color: #418dcc;
+}
+
+.gap {
+  color:#33333385;
+}
+
+@media (max-width: 50em) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    grid-template-columns: 30% 20% 20%;
+    gap: 1.6rem;
+    margin: 0 auto;
+  }
+
+  #buttons {
+    gap: 0.5rem;
+  }
+
+  .btn {
+    font-size: calc(1.3rem + 6 * ((100vw - 32rem) / 680));
+    height: 3.5rem;
+  }
+
+  .collection {
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    gap: 3rem;
+  }
+
+}
