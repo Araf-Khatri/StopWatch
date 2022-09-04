@@ -137,14 +137,14 @@ const checkGap = function (arr) {
 
 const copyThat = function (e) {
   const arr = []
-  console.log(timerCopy);
+  // console.log(timerCopy);
   timerCopy.forEach(timer => {
     // console.log(timer.textContent);
     arr.push(timer.textContent);
   })
   listOfLaps.push(arr.join(':'));
-  console.log(listOfLaps);
-  console.log(arr);
+  // console.log(listOfLaps);
+  // console.log(arr);
 
   const gap = checkGap(listOfLaps)
 
