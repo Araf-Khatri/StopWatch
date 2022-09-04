@@ -129,7 +129,7 @@ const checkGap = function (arr) {
     retur[1] -= 1
     retur[2] += 100
   }
-  console.log(retur);
+  // console.log(retur);
   return retur
 
 
