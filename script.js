@@ -77,7 +77,7 @@ const reset = function () {
   resetHTML()
 }
 
-const start = () => {
+const start = function () {
   starting = setInterval(() => {
     second.textContent = `${String(sec).padStart(2, '0')}`;
     miniSec.textContent = `${String(minis).padStart(2, '0')}`;
